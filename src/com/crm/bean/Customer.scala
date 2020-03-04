@@ -1,4 +1,4 @@
-package com.crm.bean.customer
+package com.crm.bean
 
 class Customer {
 
@@ -19,4 +19,8 @@ class Customer {
 		this.phone = phone
 		this.email = email
 	}
+
+  override def toString: String = {
+	this.id+"\t\t"+this.name+"\t\t"+this.gender+"\t\t"+this.age+"\t\t"+this.phone+"\t\t"+this.email
+  }
 }
